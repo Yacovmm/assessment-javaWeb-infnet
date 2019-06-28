@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8"/>
+    <link th:href="@{/webjars/bootstrap/4.3.1/css/bootstrap.min.css}"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            rel="stylesheet" media="screen">
+    <link rel="stylesheet"th:href="@{/css/style.css}" href="../../static/css/style.css" />
+</head>
+<body>
+
+<div class="container">
+    <div th:fragment="header">
+        <nav class="nav navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="#" th:href="@{/}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/products}">Products</a> </li>
+                        <li class="nav-item"><a class="nav-link" th:href="@{/products/add}">Create Product</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                    <h2 class="display-4">Controle de estoque</h2>
+                    <img src="https://pbs.twimg.com/profile_images/2531927187/wf3wv9rjmk6xytz422pw_400x400.jpeg" sizes="20%">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
