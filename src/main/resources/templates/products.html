@@ -27,7 +27,9 @@
                 <td th:text="${product.type}">Type</td>
                 <td th:text="${product.category}">Category</td>
                 <td th:text="${product.price}">Price</td>
-                <td th:text="${product.users}">User</td>
+                <td th:text="${product.users}">
+                    <!--<span th:each="u : ${product.users}"></span>-->
+                    User</td>
                 <td><a th:href="${'/products/edit/' + product.id}" class="btn btn-default">Edit</a> </td>
                 <td><a th:href="${'/products/delete/' + product.id}" class="btn btn-danger">Delete</a> </td>
             </tr>
